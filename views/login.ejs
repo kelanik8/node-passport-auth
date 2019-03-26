@@ -1,0 +1,21 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+    <div class="card card-body">
+        <h1 class="text-center mb-3"><i class="fa fa-sign-in"></i> Login</h1>
+        <% include ./partials/messages %>
+        <form action="/users/login" method="post">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Email" name="email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <br>
+        <p>No Accoun? <a href="/users/register">Register</a></p>
+    </div>
+    </div>
+</div>
